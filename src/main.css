@@ -1,3 +1,29 @@
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
+@tailwind components;
+
+@layer base {
+  @font-face {
+    font-family: Ginto;
+    src: url('/Ginto.woff2');
+  }
+
+  body {
+    @apply text-white overflow-x-clip min-h-screen font-ginto;
+    background-image: linear-gradient(180deg, #0c101c, #171e32, #242f50);
+  }
+
+  picture {
+    @apply block relative size-full;
+  }
+
+  img {
+    @apply size-full object-cover;
+  }
+}
+
+@layer components {
+  .header {
+    @apply text-[2.375rem] leading-[2.5rem] tracking-[-0.02em] text-center font-medium;
+  }
+}

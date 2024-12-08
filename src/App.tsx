@@ -1,24 +1,34 @@
 import { Avatar } from './components'
+import type { FormEvent } from 'react'
+
+interface IFormEvent extends FormEvent<HTMLFormElement> {
+  target: EventTarget & { [key: number]: HTMLElement }
+}
 
 export default function App() {
+  const some = (e: IFormEvent) => {
+    console.log(e.target[1])
+  }
+
   return (
-    <main>
-      <Avatar />
+    <>
+      <div className="background"></div>
 
-      <section className="px-5 py-8">
-        <h1 className="header">Mila, it&apos;s great to see you</h1>
+      <main>
+        <Avatar />
 
-        <div className="grid grid-cols-1 py-10">
-          <div className="bg-blue-500 aspect-square w-full rounded-[13%]"></div>
-          <div className="bg-orange-500 h-44"></div>
-          <div className="bg-indigo-500 h-44"></div>
-        </div>
-      </section>
+        <form onSubmit={some}></form>
 
-      <div>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, optio. Suscipit, voluptate corporis autem eos sunt fugit adipisci. Ipsum esse excepturi perferendis blanditiis expedita quo
-        porro, in quia aut fugit, nam, sit voluptas id. Officia omnis et est earum. Aperiam aliquid esse impedit repellendus aut minima culpa reiciendis ex eveniet.
-      </div>
-    </main>
+        <section className="px-5 py-8">
+          <h1 className="header">Mila, it&apos;s great to see you</h1>
+
+          <div className="grid grid-cols-1 py-10">
+            <div className="bg-blue-500 aspect-square w-full rounded-[13%]"></div>
+            <div className="bg-orange-500 h-44"></div>
+            <div className="bg-indigo-500 h-44"></div>
+          </div>
+        </section>
+      </main>
+    </>
   )
 }

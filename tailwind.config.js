@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        ginto: ['Ginto'],
+        ginto: ['Ginto', 'sans-serif'],
       },
     },
   },

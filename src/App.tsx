@@ -6,7 +6,7 @@ interface IFormEvent extends FormEvent<HTMLFormElement> {
 }
 
 export default function App() {
-  const some = (e: IFormEvent) => {
+  const handleSubmit = (e: IFormEvent) => {
     console.log(e.target[1])
   }
 
@@ -17,7 +17,7 @@ export default function App() {
       <main>
         <Avatar />
 
-        <form onSubmit={some}></form>
+        <form onSubmit={handleSubmit}></form>
 
         <section className="px-5 py-8">
           <h1 className="header">Mila, it&apos;s great to see you</h1>

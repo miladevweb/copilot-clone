@@ -10,14 +10,14 @@ type Props = {
 
 export default function CardSection({ imgUrl1, imgUrl2, description1, description2, children }: Props) {
   return (
-    <div className="grid grid-cols-1 gap-5 py-10">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 py-10">
       {/* Main Card */}
       {children}
 
-      <div className="grid grid-cols-1 gap-y-5">
+      <div className="grid grid-rows-2 gap-y-5 h-80 sm:h-full">
         <MiniCard
-          description={description1}
           imageUrl={imgUrl1}
+          description={description1}
         />
 
         <MiniCard

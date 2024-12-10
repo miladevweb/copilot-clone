@@ -26,7 +26,7 @@
 
 @layer components {
   .header {
-    @apply text-[2.375rem] leading-[2.5rem] tracking-[-0.02em] text-center font-medium;
+    @apply text-[2.375rem] leading-[2.5rem] tracking-[-0.02em] text-center font-medium text-[#F2DDCC];
   }
 
   .background {

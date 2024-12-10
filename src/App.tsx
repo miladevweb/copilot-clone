@@ -32,8 +32,8 @@ export default function App() {
             <CardSection
               imgUrl1="/img5.jfif"
               imgUrl2="/img6.jfif"
-              description1="Share your favorite author to get a book"
-              description2="Let's co-write a birthday letter"
+              description1="Ask me for a week of plant-forward meals"
+              description2="Adventure games that teach critical thinking"
             >
               <MainCard
                 imgUrl="/img4.jfif"
@@ -47,8 +47,8 @@ export default function App() {
             <CardSection
               imgUrl1="/img8.jfif"
               imgUrl2="/img9.jfif"
-              description1="Share your favorite author to get a book"
-              description2="Let's co-write a birthday letter"
+              description1="How AI is reshaping healthcare today"
+              description2="Beat the winter slump by brightening your mood"
             >
               <MainCard
                 imgUrl="/img7.png"

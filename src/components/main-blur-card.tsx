@@ -12,6 +12,7 @@ export default function MainBlurCard({ imgUrl, primaryLabel, secondaryLabel, but
         <img
           alt="#"
           src={imgUrl}
+          className="object-[60%_0%]"
         />
       </picture>
 

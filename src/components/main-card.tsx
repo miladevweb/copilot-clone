@@ -14,7 +14,7 @@ export default function MainCard({ description, imgUrl }: Props) {
         />
       </picture>
 
-      <h3 className="h-max flex-1 flex items-center p-3 px-5 h3__class">{description}</h3>
+      <h3 className="h-max flex-1 flex items-center p-3 px-5 h3__class text-[#F2DDCC]">{description}</h3>
     </div>
   )
 }

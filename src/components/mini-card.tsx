@@ -5,7 +5,7 @@ type Props = {
 
 export default function MiniCard({ imageUrl, description }: Props) {
   return (
-    <div className="bg-white/[0.075] rounded-[2rem] flex gap-x-5 p-4 overflow-clip">
+    <div className="bg-white/[0.075] rounded-[2rem] flex gap-x-5 p-3 overflow-clip">
       <picture className="min-[440px]:h-40 h-32  flex-1 aspect-square">
         <img
           alt="#"

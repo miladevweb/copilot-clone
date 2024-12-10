@@ -14,7 +14,7 @@ export default function MiniCard({ imageUrl, description }: Props) {
         />
       </picture>
 
-      <h4 className="min-[350px]:text-2xl min-[350px]:leading-none text-xl flex-[5] flex items-end">{description}</h4>
+      <h4 className="text-xl min-[350px]:text-2xl font-medium text-[#F2DDCC] leading-none min-[350px]:leading-none flex-[5] flex items-end">{description}</h4>
     </div>
   )
 }

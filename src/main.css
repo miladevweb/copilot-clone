@@ -34,6 +34,10 @@
     background-image: linear-gradient(180deg, #0c101c, #171e32, #242f50);
   }
 
+  .h2__class {
+    @apply text-[1.75rem] leading-none tracking-[-0.01em] text-center font-medium text-[#F2DDCC] mt-7;
+  }
+
   .h3__class {
     @apply font-medium text-[1.55rem] leading-none;
   }

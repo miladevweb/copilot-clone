@@ -12,7 +12,7 @@
   }
 
   body {
-    @apply text-white overflow-x-clip min-h-screen font-ginto tracking-[-0.02em];
+    @apply text-white overflow-x-clip min-h-screen font-ginto tracking-[-0.02em] text-pretty;
   }
 
   picture {

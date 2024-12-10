@@ -1,27 +1,12 @@
 import { Avatar } from './components'
-import type { FormEvent } from 'react'
-
-interface IFormEvent extends FormEvent<HTMLFormElement> {
-  target: EventTarget & { [key: number]: HTMLElement }
-}
 
 export default function App() {
-  const handleSubmit = (e: IFormEvent) => {
-    e.preventDefault()
-
-    
-  }
-
   return (
     <>
       <div className="background"></div>
 
       <main>
         <Avatar />
-
-        <form onSubmit={handleSubmit}>
-          <button type="submit">Submit</button>
-        </form>
 
         <section className="px-5 py-8">
           <h1 className="header">Mila, it&apos;s great to see you</h1>

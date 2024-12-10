@@ -1,4 +1,4 @@
-import { Avatar, CardSection, MainBlurCard } from './components'
+import { Avatar, CardSection, MainBlurCard, MainCard } from './components'
 
 export default function App() {
   return (
@@ -22,6 +22,18 @@ export default function App() {
               buttonLabel="Play Now"
               secondaryLabel="Today's top stories on Copilot Daily"
               primaryLabel="Minimum wage increases, and more"
+            />
+          </CardSection>
+
+          <CardSection
+            imgUrl1="/img5.jpg"
+            imgUrl2="/img6.jpg"
+            description1="Share your favorite author to get a book"
+            description2="Let's co-write a birthday letter"
+          >
+            <MainCard
+              imgUrl="/img7.jfif"
+              description="Decompress from your day"
             />
           </CardSection>
         </section>

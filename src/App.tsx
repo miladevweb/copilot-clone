@@ -8,35 +8,37 @@ export default function App() {
       <main>
         <Avatar />
 
-        <section className="px-6 pt-8 max-w-[816px]">
-          <h1 className="header">Mila, it&apos;s great to see you</h1>
+        <div className='flex justify-center'>
+          <section className="px-6 pt-8 max-w-[816px]">
+            <h1 className="header">Mila, it&apos;s great to see you</h1>
 
-          <CardSection
-            imgUrl1="/img3.jpg"
-            imgUrl2="/img4.jpg"
-            description1="Share your favorite author to get a book"
-            description2="Let's co-write a birthday letter"
-          >
-            <MainBlurCard
-              imgUrl="/img2.jfif"
-              buttonLabel="Play Now"
-              secondaryLabel="Today's top stories on Copilot Daily"
-              primaryLabel="Minimum wage increases, and more"
-            />
-          </CardSection>
+            <CardSection
+              imgUrl1="/img3.jpg"
+              imgUrl2="/img4.jpg"
+              description1="Share your favorite author to get a book"
+              description2="Let's co-write a birthday letter"
+            >
+              <MainBlurCard
+                imgUrl="/img2.jfif"
+                buttonLabel="Play Now"
+                secondaryLabel="Today's top stories on Copilot Daily"
+                primaryLabel="Minimum wage increases, and more"
+              />
+            </CardSection>
 
-          <CardSection
-            imgUrl1="/img5.jpg"
-            imgUrl2="/img6.jpg"
-            description1="Share your favorite author to get a book"
-            description2="Let's co-write a birthday letter"
-          >
-            <MainCard
-              imgUrl="/img7.jfif"
-              description="Decompress from your day"
-            />
-          </CardSection>
-        </section>
+            <CardSection
+              imgUrl1="/img5.jpg"
+              imgUrl2="/img6.jpg"
+              description1="Share your favorite author to get a book"
+              description2="Let's co-write a birthday letter"
+            >
+              <MainCard
+                imgUrl="/img7.jfif"
+                description="Decompress from your day"
+              />
+            </CardSection>
+          </section>
+        </div>
 
         <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa recusandae error dignissimos ex voluptatum excepturi ipsum quos debitis, molestias eius beatae, soluta, vel consectetur.

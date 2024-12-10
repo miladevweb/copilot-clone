@@ -1,4 +1,4 @@
-import { Avatar, CardSection, MainBlurCard, MainCard } from './components'
+import { Avatar, CardSection, Input, MainBlurCard, MainCard } from './components'
 
 export default function App() {
   return (
@@ -55,6 +55,8 @@ export default function App() {
                 description="Decompress from your day"
               />
             </CardSection>
+
+            <Input />
           </section>
         </div>
       </main>

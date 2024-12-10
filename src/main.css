@@ -7,9 +7,12 @@
     font-family: Ginto;
     src: url('/Ginto.woff2');
   }
+  * {
+    /* outline: 2px solid orangered; */
+  }
 
   body {
-    @apply text-white overflow-x-clip min-h-screen font-ginto;
+    @apply text-white overflow-x-clip min-h-screen font-ginto tracking-[-0.02em];
   }
 
   picture {
@@ -29,5 +32,15 @@
   .background {
     @apply fixed -z-10 h-screen w-screen top-0 left-0;
     background-image: linear-gradient(180deg, #0c101c, #171e32, #242f50);
+  }
+
+  .blur__class::before {
+    content: '';
+    left: 0;
+    bottom: 100%;
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    background-image: linear-gradient(to top, #473d4d, transparent);
   }
 }

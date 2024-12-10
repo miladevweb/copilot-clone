@@ -1,4 +1,4 @@
-import { Avatar } from './components'
+import { Avatar, MiniCard } from './components'
 
 export default function App() {
   return (
@@ -8,13 +8,16 @@ export default function App() {
       <main>
         <Avatar />
 
-        <section className="px-6 py-8 max-w-[816px]">
+        <section className="px-6 pt-8 max-w-[816px]">
           <h1 className="header">Mila, it&apos;s great to see you</h1>
 
           <div className="grid grid-cols-1 gap-5 py-10">
             <div className="bg-[#483D4E] aspect-square w-full rounded-[12%]  overflow-clip grid grid-rows-[15%_85%] min-[350px]:grid-rows-[45%_55%] min-[490px]:grid-rows-[55%_45%] min-[532px]:grid-rows-[65%_35%]">
               <picture>
-                <img src="/img2.jfif" alt="#" />
+                <img
+                  src="/img2.jfif"
+                  alt="#"
+                />
               </picture>
 
               <div className="pb-6 px-7 flex flex-col justify-end gap-y-3 relative blur__class">
@@ -28,19 +31,16 @@ export default function App() {
               </div>
             </div>
 
-            <div className="h-80 grid gap-y-5">
-              <div className="bg-white/[0.075] rounded-[2rem]">
-                <picture>
-                  <img src="/img2.jfif" alt="#" />
-                </picture>
+            <div className="grid grid-cols-1 gap-y-5">
+              <MiniCard
+                description="Share your favorite author to get a book"
+                imageUrl="/img3.jpg"
+              />
 
-                <div>
-
-                </div>
-              </div>
-
-              
-              <div className="bg-white/[0.075] rounded-[2rem]"></div>
+              <MiniCard
+                imageUrl="/img4.jpg"
+                description="Let's co-write a birthday letter"
+              />
             </div>
           </div>
         </section>

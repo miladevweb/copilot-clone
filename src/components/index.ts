@@ -1,3 +1,4 @@
 import Avatar from './avatar'
+import MiniCard from './mini-card'
 
-export { Avatar }
+export { Avatar, MiniCard }

@@ -51,4 +51,21 @@
     width: 100%;
     background-image: linear-gradient(to top, #473d4d, transparent);
   }
+
+  .input__class {
+    scale: 1.15;
+    opacity: 0;
+    transform: translateX(-50%) translateY(25px);
+    transform-origin: left;
+
+    animation: appear 0.5s ease-in-out 0.2s forwards;
+  }
+
+  @keyframes appear {
+    to {
+      scale: 1;
+      opacity: 1;
+      transform: translateX(-50%) translateY(0px);
+    }
+  }
 }

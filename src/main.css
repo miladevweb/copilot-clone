@@ -7,8 +7,12 @@
     font-family: Ginto;
     src: url('/Ginto.woff2');
   }
-  * {
-    /* outline: 2px solid orangered; */
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #0c101c;
   }
 
   body {

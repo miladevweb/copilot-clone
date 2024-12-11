@@ -20,7 +20,7 @@ export default function MainBlurCard({ imgName, primaryLabel, secondaryLabel, bu
 
       <div className="pb-6 px-7 bg-[#483D4E] flex flex-col justify-end gap-y-3 relative blur__class">
         <div className="text-[#E1BBA8]">
-          <span className="opacity-80">{secondaryLabel}</span>
+          <h2 className="opacity-80">{secondaryLabel}</h2>
 
           <h3 className="h3__class">{primaryLabel}</h3>
         </div>

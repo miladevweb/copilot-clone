@@ -1,17 +1,19 @@
+import { getImage } from '@/utils/get-image'
+
 type Props = {
-  imgUrl: string
+  imgName: string
   primaryLabel: string
   secondaryLabel: string
   buttonLabel: string
 }
 
-export default function MainBlurCard({ imgUrl, primaryLabel, secondaryLabel, buttonLabel }: Props) {
+export default function MainBlurCard({ imgName, primaryLabel, secondaryLabel, buttonLabel }: Props) {
   return (
     <div className="aspect-square w-full rounded-[10%] overflow-clip relative flex flex-col justify-end">
       <picture className="absolute top-0 left-0">
         <img
           alt="#"
-          src={imgUrl}
+          src={getImage(imgName)}
           className="object-[60%_0%]"
         />
       </picture>

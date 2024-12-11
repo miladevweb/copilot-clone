@@ -53,10 +53,10 @@
   }
 
   .input__class {
-    scale: 1.15;
     opacity: 0;
-    transform: translateX(-50%) translateY(25px);
+    scale: 1.15;
     transform-origin: left;
+    transform: translateX(-50%) translateY(25px);
 
     animation: appear 0.5s ease-in-out 0.2s forwards;
   }

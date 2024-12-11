@@ -9,7 +9,7 @@ export default function App() {
         <Avatar />
 
         <div className="flex justify-center">
-          <section className="px-6 pt-8 max-w-[816px]">
+          <section className="px-6 pt-8 max-w-[875px]">
             <h1 className="header">Mila, it&apos;s great to see you</h1>
 
             <CardSection

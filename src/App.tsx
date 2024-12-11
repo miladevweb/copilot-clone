@@ -1,4 +1,4 @@
-import { Avatar, CardSection, Input, MainBlurCard, MainCard } from './components'
+import { Avatar, CardSection, InputSection, MainBlurCard, MainCard } from './components'
 
 export default function App() {
   return (
@@ -56,9 +56,11 @@ export default function App() {
               />
             </CardSection>
 
-            <Input />
+            <InputSection />
           </section>
         </div>
+
+        <div className="mb-20"></div>
       </main>
     </>
   )

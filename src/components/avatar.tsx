@@ -1,3 +1,5 @@
+import { getImage } from '@/utils/get-image'
+
 export default function Avatar() {
   return (
     <nav>
@@ -5,7 +7,7 @@ export default function Avatar() {
         <picture className="size-10 mr-2 cursor-pointer">
           <img
             alt="#"
-            src="./avatar.jpg"
+            src={getImage('avatar')}
             className="rounded-full"
           />
         </picture>

@@ -1,15 +1,17 @@
+import { getImage } from '@/utils/get-image'
+
 type Props = {
-  imgUrl: string
+  imgName: string
   description: string
 }
 
-export default function MainCard({ description, imgUrl }: Props) {
+export default function MainCard({ description, imgName }: Props) {
   return (
     <div className="aspect-square w-full rounded-[10%] overflow-clip relative flex flex-col p-3 bg-white/[0.075]">
       <picture className="h-fit max-h-[85%] aspect-square">
         <img
           alt="#"
-          src={imgUrl}
+          src={getImage(imgName)}
           className="rounded-t-[10%] rounded-b-[7%]"
         />
       </picture>

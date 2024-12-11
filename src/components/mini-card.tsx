@@ -1,15 +1,17 @@
+import { getImage } from '@/utils/get-image'
+
 type Props = {
-  imageUrl: string
+  imageName: string
   description: string
 }
 
-export default function MiniCard({ imageUrl, description }: Props) {
+export default function MiniCard({ imageName, description }: Props) {
   return (
     <div className="bg-white/[0.075] rounded-[2rem] flex gap-x-5 p-3 overflow-clip">
       <picture className="flex-1 aspect-square">
         <img
           alt="#"
-          src={imageUrl}
+          src={getImage(imageName)}
           className="rounded-3xl"
         />
       </picture>
